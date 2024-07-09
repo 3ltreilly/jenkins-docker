@@ -1,5 +1,8 @@
 https://www.jenkins.io/doc/book/installing/docker/#on-macos-and-linux
 
+
+ssh 3ltreilly@milhouse.local
+
 # make special network
 docker network create jenkins
 
@@ -19,7 +22,7 @@ docker run \
   --storage-driver overlay2
 
 # build the image in the Dockerfile
-  docker build -t myjenkins-blueocean:2.452.2-1 .
+docker build -t myjenkins-blueocean:2.452.2-1 .
 
 # run that image
 docker run \
